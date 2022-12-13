@@ -1,52 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Pricing with toggle</title>
 
-  Our Pricing
-  Annually
-  Monthly
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="decorative-bkg">
+      <img src="./images/bg-top.svg" alt="Squilly lines background" />
+    </div>
+    <h1>Our Pricing</h1>
+    <div class="toggle-area">
+      <div class="annually">Annually</div>
+      <!-- Rounded switch -->
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <div class="monthly">Monthly</div>
+    </div>
+    <div class="basic-card">
+      <div class="heading">Basic</div>
+      <div class="monthly-price">
+        <span class="dollar-sign">&dollar;</span
+        ><span class="amount">19.99</span>
+      </div>
+      <div class="annual-price">
+        <span class="dollar-sign">&dollar;</span>
+        <span class="amount">199.99</span>
+      </div>
+      <hr />
+      <span class="product-details">500 GB Storage</span>
+      <hr />
+      <span class="product-details">2 Users Allowed</span>
+      <hr />
+      <span class="product-details">Send up to 3 GB</span>
+      <hr />
+      <button>Learn More</button>
+    </div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+    <div class="professional-card">
+      <div class="heading">Professional</div>
+      <div class="monthly-price">
+        <span class="dollar-sign">&dollar;</span
+        ><span class="amount">24.99</span>
+      </div>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+      <div class="annual-price">
+        <span class="dollar-sign">&dollar;</span>
+        <span class="amount">249.99</span>
+      </div>
+      <hr /> 
+      <span class="product-details">1 TB Storage</span>
+      <hr />
+      <span class="product-details">5 Users Allowed</span>
+      <hr />
+      <span class="product-details">Send up to 10 GB</span>
+      <hr />
+      <button>Learn More</button>
+    </div>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="master-card">
+    <div class="heading">Master</div>
+     <div class="monthly-price">
+        <span class="dollar-sign">&dollar;</span
+        ><span class="amount">39.99</span>
+      </div>
+     
+    <div class="annual-price">
+        <span class="dollar-sign">&dollar;</span>
+        <span class="amount">399.99</span>
+      </div>
+      <hr />
+      
+      <span class="product-details">2 TB Storage</span>
+      <hr />
+      <span class="product-details">10 Users Allowed</span>
+      <hr />
+      <span class="product-details">Send up to 20 GB</span>
+      <hr />
+      <button>Learn More</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Brian Marshall</a>.
+    </div>
+    <script src="./pricing.js"></script>
+  </body>
 </html>
